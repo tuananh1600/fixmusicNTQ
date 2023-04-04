@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/fixmusicNTQ/static/js/main.f3c2b253.js",
+    "main.js": "/fixmusicNTQ/static/js/main.e057b03a.js",
     "static/media/waiting.mp3": "/fixmusicNTQ/static/media/waiting.531121b03f4cc1d17123.mp3",
     "static/media/matchfound.mp3": "/fixmusicNTQ/static/media/matchfound.d98a861a681336a76c2b.mp3",
     "index.html": "/fixmusicNTQ/index.html",
-    "main.f3c2b253.js.map": "/fixmusicNTQ/static/js/main.f3c2b253.js.map"
+    "main.e057b03a.js.map": "/fixmusicNTQ/static/js/main.e057b03a.js.map"
   },
   "entrypoints": [
-    "static/js/main.f3c2b253.js"
+    "static/js/main.e057b03a.js"
   ]
 }
