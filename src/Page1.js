@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from "react";
-import matchfound from "./matchfound.mp3";
-import waiting from "./waiting.mp3";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { musicSlice } from "./musicSlice";
 
 const Page1 = () => {
   const navigate = useNavigate();
-  const [audioMatchfound] = useState(new Audio(matchfound));
+  const dispatch = useDispatch()
   useEffect(() => {
+    dispatch(musicSlice.actions.openMusicWaiting())
     setTimeout(() => {
-      audioMatchfound.play();
+      dispatch(musicSlice.actions.initStateWaiting())
+      dispatch(musicSlice.actions.openMusicMatchfound())
       navigate("/page2");
     }, 3000);
   }, []);
-  return (
+
+  return (  
     <div>
-      <div>Page1</div>
-      <audio src={waiting} autoPlay loop />
+     <div>Page1</div>
     </div>
   );
 };
